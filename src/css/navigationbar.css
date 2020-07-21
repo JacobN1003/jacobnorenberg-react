@@ -1,0 +1,60 @@
+#navigation-bar{
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(52, 52, 53, 0.548);
+}
+
+#my-portfolio{
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+}
+#my-portfolio:hover{
+    text-decoration: none;
+    transition: .4s ease-in;
+    text-shadow: 1px 1px 2px black, 
+    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+#my-portfolio:focus{
+    animation-name: clicking;
+    animation-duration: 1s;
+}
+
+#my-portolio-wrapper{
+    font-size: 20px;
+}
+
+#about-me{
+    color:rgb(207, 206, 206);
+}
+#about-me:hover{
+    transition: .4s ease-in;
+    text-shadow: 1px 1px 2px black, 
+    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+#about-me:focus{
+    animation-name: clicking;
+    animation-duration: 1s;
+}
+
+#my-work{
+    color:rgb(207, 206, 206);
+}
+#my-work:hover{
+    transition: .4s ease-in;
+    text-shadow: 1px 1px 2px black, 
+    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
+#my-work:focus{
+    animation-name: clicking;
+    animation-duration: 1s;
+}
+
+#work-exp{
+    background-color: transparent;
+}
+
+@keyframes clicking{
+    from{transform: scale(1.2,1.2)};
+    to{transform: scale(1,1)}
+}
