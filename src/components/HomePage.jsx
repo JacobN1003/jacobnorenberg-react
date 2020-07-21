@@ -14,9 +14,6 @@ export default class HomePage extends Component {
                     <br/>
                     <label id="marine">US Marine Corps Veteran</label>
                 </div>
-                <div id="todolist">
-            
-                </div>
             </div>
         )
     }
