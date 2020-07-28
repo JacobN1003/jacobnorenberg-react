@@ -21,8 +21,8 @@ export default class WorkExperience extends Component {
                              <p>   
                                 I worked my way up to being able to create, modify, and improve front-end functionality,
                                 displays, and animations using React.js. Similarily I was able to complete more complex back-end data 
-                                handling and functionality including; email authentication, login/registration authentication, and 
-                                modification of user data. 
+                                handling and functionality including; email confirmation, login/registration authentication, and 
+                                manipulating user data. 
                             </p>
                         </div>
                     </div>
