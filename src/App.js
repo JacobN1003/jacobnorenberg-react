@@ -4,7 +4,7 @@ import HomePage from './components/HomePage.jsx'
 import WorkExperience from './components/WorkExperience.jsx'
 import Skills from './components/Skills.jsx'
 import ContactMe from './components/ContactMe.jsx'
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import {HashRouter as Router,Switch,Route} from "react-router-dom";
 import './css/App.css';
 
 
