@@ -15,16 +15,16 @@ function App() {
       <div className="App">
         <NavigationBar/>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="jacobnorenberg-react/#/">
             <HomePage/>
           </Route>
-          <Route path="/work-experience">
+          <Route path="jacobnorenberg-react/#/work-experience">
             <WorkExperience/>
           </Route>
-          <Route path="/skills">
+          <Route path="jacobnorenberg-react/#/skills">
             <Skills/>
           </Route>
-          <Route path="/contact-me">
+          <Route path="jacobnorenberg-react/#/contact-me">
             <ContactMe/>
           </Route>
         </Switch>
