@@ -4,6 +4,28 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from
 import '../css/navigationbar.css'
 
 export default class AboutMe extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+
+            }
+            this.toggleSkillsPage = this.toggleSkillsPage.bind(this)
+            this.toggleWorkPage = this.toggleWorkPage.bind(this)
+            this.toggleContactPage = this.toggleContactPage.bind(this)
+        }
+
+        toggleSkillsPage(){
+            this.props.togglePage("skills")
+        }
+
+        toggleWorkPage(){
+            this.props.togglePage("work")
+        }
+
+        toggleContactPage(){
+            this.props.togglePage("contact")
+        }
+    
     render() {
         return (
             <div>
@@ -12,13 +34,13 @@ export default class AboutMe extends Component {
                         About me
                     </DropdownToggle>
                         <DropdownMenu >
-                            <DropdownItem href="/skills">
+                            <DropdownItem onClick={this.toggleSkillsPage}>
                                 My Skills
                             </DropdownItem>
-                            <DropdownItem href="/work-experience">
+                            <DropdownItem onClick={this.toggleWorkPage}>
                                 Work Experience
                             </DropdownItem>
-                            <DropdownItem href="contact-me">
+                            <DropdownItem onClick={this.toggleContactPage}>
                                 Contact Me
                             </DropdownItem>
                         </DropdownMenu>
