@@ -15,17 +15,17 @@ function App() {
       <div className="App">
         <NavigationBar/>
         <Switch>
-          <Route exact path="jacobnorenberg-react/#/">
-            <HomePage/>
+          <Route exact path="/" component={HomePage}>
+            {/* <HomePage/> */}
           </Route>
-          <Route path="jacobnorenberg-react/#/work-experience">
-            <WorkExperience/>
+          <Route path="/work-experience" component={WorkExperience}>
+            {/* <WorkExperience/> */}
           </Route>
-          <Route path="jacobnorenberg-react/#/skills">
-            <Skills/>
+          <Route path="/skills" component={Skills}>
+            {/* <Skills/> */}
           </Route>
-          <Route path="jacobnorenberg-react/#/contact-me">
-            <ContactMe/>
+          <Route path="/contact-me" component={ContactMe}>
+            {/* <ContactMe/> */}
           </Route>
         </Switch>
       </div>
