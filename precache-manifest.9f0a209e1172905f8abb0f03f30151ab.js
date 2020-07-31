@@ -1,43 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee597d6cb78cc5ef5602dc1998fef3f4",
+    "revision": "bac4391f18905e5339b2b6809f8ef0e1",
     "url": "/jacobnorenberg-react/index.html"
   },
   {
-    "revision": "cf7354e3db074978d546",
+    "revision": "f809411e211b5dc8a574",
     "url": "/jacobnorenberg-react/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "7884fe62ff29595ea5f4",
-    "url": "/jacobnorenberg-react/static/css/main.8651b5c4.chunk.css"
+    "revision": "a714bb748c798750b569",
+    "url": "/jacobnorenberg-react/static/css/main.cf5cebf7.chunk.css"
   },
   {
-    "revision": "cf7354e3db074978d546",
-    "url": "/jacobnorenberg-react/static/js/2.f7ed6748.chunk.js"
+    "revision": "f809411e211b5dc8a574",
+    "url": "/jacobnorenberg-react/static/js/2.8519b8a6.chunk.js"
   },
   {
-    "revision": "3a5359d431b8190dc2f36e4703f39768",
-    "url": "/jacobnorenberg-react/static/js/2.f7ed6748.chunk.js.LICENSE.txt"
+    "revision": "30b9fb8b734368fdd713f829e7d007f0",
+    "url": "/jacobnorenberg-react/static/js/2.8519b8a6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7884fe62ff29595ea5f4",
-    "url": "/jacobnorenberg-react/static/js/main.6bd6f6b8.chunk.js"
+    "revision": "a714bb748c798750b569",
+    "url": "/jacobnorenberg-react/static/js/main.b75d9f00.chunk.js"
   },
   {
-    "revision": "5ed71730063ce44afeab",
-    "url": "/jacobnorenberg-react/static/js/runtime-main.423fb57a.js"
+    "revision": "902996789a2ce5969e42",
+    "url": "/jacobnorenberg-react/static/js/runtime-main.1a622076.js"
   },
   {
     "revision": "92b7dbcad15852433c6c52a2378f932a",
     "url": "/jacobnorenberg-react/static/media/carlsbad-beach.92b7dbca.jpg"
-  },
-  {
-    "revision": "4df4274c3bd3bc0018e15f5f28e3f4a7",
-    "url": "/jacobnorenberg-react/static/media/carlsbad-sign-dark.4df4274c.jpg"
-  },
-  {
-    "revision": "08783f4474cc5f6b28880d890873459c",
-    "url": "/jacobnorenberg-react/static/media/carlsbad-sign.08783f44.jpg"
   },
   {
     "revision": "449a360f722095ef79a481b101e22e28",
