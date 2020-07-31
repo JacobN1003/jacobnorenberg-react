@@ -1,13 +1,37 @@
-#navigation-bar{
-    position: absolute;
-    width: 100vw;
-    z-index: 1;
-    background-color: rgba(52, 52, 53, 0.548);
+#menu{
+    position: relative;
+    padding:10px;
+    width: 100%;
+    width: 100%;
+    background-color: transparent;
 }
 
+#btn-wrapper{
+    background-color: transparent;
+    border: none;
+}
+#btn-wrapper:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+#top, #mid, #bot{
+    position: relative;
+    margin-top:6px;
+    margin-bottom:6px;
+    background-color: white;
+    width: 30px;
+    height: 4px;
+}
+
+
+
+
 #my-portfolio{
-    font-size: 25px;
+    padding-top: 8px;
     color:rgb(255, 255, 255);
+    transition: color 1s ease-in;
+    transition-delay: 3s;
 }
 #my-portfolio:hover{
     cursor: pointer;
@@ -19,40 +43,6 @@
 #my-portfolio:focus{
     animation-name: clicking;
     animation-duration: 1s;
-}
-
-#my-portolio-wrapper{
-    font-size: 20px;
-}
-
-#about-me{
-    color:rgb(207, 206, 206);
-}
-#about-me:hover{
-    transition: .4s ease-in;
-    text-shadow: 1px 1px 2px black, 
-    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-}
-#about-me:focus{
-    animation-name: clicking;
-    animation-duration: 1s;
-}
-
-#my-work{
-    color:rgb(207, 206, 206);
-}
-#my-work:hover{
-    transition: .4s ease-in;
-    text-shadow: 1px 1px 2px black, 
-    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-}
-#my-work:focus{
-    animation-name: clicking;
-    animation-duration: 1s;
-}
-
-#work-exp{
-    background-color: transparent;
 }
 
 @keyframes clicking{

@@ -1,67 +1,46 @@
 #home-page{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.295), 
-    rgba(0, 0, 0, 0.144)), url("../img/carlsbad-sign.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-color: rgb(37, 37, 37); */
     height: 100vh;
+    width: 100%;
     color:white;
 }
 
-#port-container-dark{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.733), 
-    rgba(0, 0, 0, 0.411)), url("../img/carlsbad-sign-dark.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    color:white;
-}
-
-#my-info{
+.jacobs-profile{
     position: relative;
+    text-shadow: 1px 1px 2px black;
     margin: auto;
-    padding-top: 10vh;
-    width: 50%;
+    width: 100%;
     text-align: center;
+    margin-top: 30vh;
 }
 
-#name{
-    font-size: 80px;
-    font-weight: 500;
+.jacobs-profile.lightup{
+    color: rgb(49, 116, 77);
+    text-shadow: 1px 1px 2px black;
+    animation-name: lightup;
+    animation-duration: 2s;
+}
+@keyframes lightup{
+    from{transform: scale(1.1,1.1); 
+        text-shadow: 1px 1px 2px black, 
+        0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+        };
+    to{transform: scale(1,1); 
+        text-shadow: none;
+        }
 }
 
-@keyframes hovering{
-    from{transform: scale(1.1,1.1)};
-    to{transform: scale(1,1)}
-}
-#name:hover{
-    animation-name: hovering;
-    animation-duration: 1s;
-    text-shadow: 1px 1px 2px black, 
-    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-
+.jacobs-button-typing{
+    position: relative;
+    text-shadow: 1px 1px 2px black;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
 }
 
-#current:hover{
-    animation-name: hovering;
-    animation-duration: 1s;
-    transition: .4s ease;
-    text-shadow: 1px 1px 2px black, 
-    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+#home-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
 }
-
-#future:hover{
-    animation-name: hovering;
-    animation-duration: 1s;
-    transition: .4s ease;
-    text-shadow: 1px 1px 2px black, 
-    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-}
-
-#marine:hover{
-    animation-name: hovering;
-    animation-duration: 1s;
-    transition: .4s ease;
-    text-shadow: 1px 1px 2px black, 
-    0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-}
-

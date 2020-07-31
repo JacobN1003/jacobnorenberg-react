@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Navbar, NavbarBrand, Button, Nav} from 'reactstrap'
+import Typical from 'react-typical'
+// import {AppBar, Toolbar, IconButton, Typography, Button, makeStyles} from '@material-ui/core'
+// import  MenuIcon  from '@material-ui/icons/Menu'
 import AboutMe from './AboutMe.jsx'
 import MyWork from './MyWork.jsx'
 import HomePage from './HomePage.jsx'
@@ -37,27 +40,20 @@ export default class NavigationBar extends Component {
         if(page === "contact") this.setState({showHomePage: false, showSkillsPage: false, showWorkPage: false, showContactPage: true})
     }
 
+    
+    
     render() {
         return (
-            <div>
-                <Navbar id="navigation-bar" expand="md">
-                    <Nav id="my-portfolio" onClick={this.toggleHome}> 
-                        &lt;Jacob's Portfolio/&gt;
-                    </Nav>
-                    <Nav className="ml-left">
-                        <MyWork/>
-                        <AboutMe togglePage={this.togglePage}/>
-                    </Nav>
-                    <Nav className="ml-auto">
-                        <Button size="sm" onClick={this.toggleMode}>
-                            {this.state.darkMode === false ? "light mode" : "dark mode"}
-                        </Button>
-                    </Nav>
-                </Navbar>
-                {this.state.showHomePage && <HomePage/>}
+            <div id="menu">
+               <Button id="btn-wrapper">
+                <div id="top"/>
+                <div id="mid"/>
+                <div id="bot"/>
+               </Button>
+                {/* {this.state.showHomePage && <HomePage/>}
                 {this.state.showSkillsPage && <Skills/>}
                 {this.state.showWorkPage && <WorkExperience/>}
-                {this.state.showContactPage && <ContactMe/>}
+                {this.state.showContactPage && <ContactMe/>} */}
             </div>
         )
     }
