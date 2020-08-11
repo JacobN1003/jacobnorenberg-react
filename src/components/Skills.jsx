@@ -13,11 +13,6 @@ export default class Skills extends Component {
         this.state = {
             activeTab: 'primary'
         }
-        this.toggleTab = this.toggleTab.bind(this)
-    }
-
-    toggleTab(tab){
-        this.setState({activeTab: tab})
     }
 
     render() {
@@ -26,19 +21,7 @@ export default class Skills extends Component {
                 <div id="sections-container">
                 <h1>My Skills</h1>
                 <hr/>
-                    {/* <Nav tabs>
-                        <NavItem id="tab">
-                            <NavLink onClick={() => { this.toggleTab('primary'); }}>
-                                <h2>My Skills</h2>
-                            </NavLink>
-                        </NavItem>
-                        <NavItem id="tab">
-                            <NavLink onClick={() => { this.toggleTab('secondary'); }}>
-                                <h2>Other Skills</h2>
-                            </NavLink>
-                        </NavItem>
-                    </Nav> */}
-                    <TabContent activeTab={this.state.activeTab}>
+                    <TabContent >
                         <TabPane tabId="primary">
                             <div id="section-one">
                                 <div id="first-icons">
@@ -99,14 +82,6 @@ export default class Skills extends Component {
                                 </div>
                             </div>
                         </TabPane>
-                        {/* <TabPane tabId="secondary">
-                            <div id="section-two">
-                                <div id="secondary-icons">
-                                    
-
-                                </div>
-                            </div>
-                        </TabPane> */}
                     </TabContent>
                 </div>
             </div>

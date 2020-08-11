@@ -1,33 +1,63 @@
 #home-page{
-    /* background-color: rgb(37, 37, 37); */
     height: 100vh;
     width: 100%;
     color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.jacobs-profile{
+/* ------HOME--------- */
+#home-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.247);
+    height: 85vh;
+    padding: 10px 10px 10px 10px;
+    border-radius: 30px;
+    margin: 1vh 1vh 1vh 1vh;
+    border: 1px rgb(0, 0, 0) solid;
+    /* filter: brightness(50%) blur(10px); */
+}
+
+#portrait-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#home-portrait{
+    height:150px;
+    width:150px;
+    background-color: rgba(0, 0, 0, 0.479);
+    background-image: url("../img/portrait-nobg-test.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 80px;
+    border: solid 2px rgba(0, 0, 0, 0.445);
+}
+
+#current, #future, #marine{
+    font-size: 14px;
+}
+
+.jacobs-portfolio{
+    position: relative;
+    text-shadow: 2px 2px 3px black;
     margin: auto;
     width: 100%;
     text-align: center;
-    margin-top: 30vh;
 }
 
-.jacobs-profile.lightup{
-    color: rgb(49, 116, 77);
+.jacobs-portfolio.lightup{
+    color: rgb(20, 105, 80);
     text-shadow: 1px 1px 2px black;
     animation-name: lightup;
     animation-duration: 2s;
-}
-@keyframes lightup{
-    from{transform: scale(1.1,1.1); 
-        text-shadow: 1px 1px 2px black, 
-        0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-        };
-    to{transform: scale(1,1); 
-        text-shadow: none;
-        }
 }
 
 .jacobs-button-typing{
@@ -39,8 +69,90 @@
     margin-top: 5vh;
 }
 
-#home-button{
+.jacobs-button-typing.btnlightup{
+    color: rgb(21, 48, 167);
+    text-shadow: 1px 1px 2px black;
+    animation-name: lightup;
+    animation-duration: 1s;
+}
+
+.jacobs-button-typing.btnlightup.vanish{
+    transition-duration: 0.2s;
+    transform: scale(1,0)
+}
+
+.home-button-div{
     display: flex;
     justify-content: center;
     margin-top: 5vh;
+    opacity:0;
+    transform: scale(1,0); 
 }
+
+#home-button{
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+    width:100px;
+    height:50px;
+    border-radius: 50px;
+    transition-duration: 1s;
+}
+
+#home-button:focus{
+    animation-name: buttonclick;
+    animation-duration: 0.25s;
+}
+@keyframes buttonclick{
+    from{transform:scale(1.1,1.1)}
+    to{transform:scale(1,1)}
+}
+
+.home-button-div.appear{
+    transition-duration: 0.5s;
+    opacity:1;
+    transform: scale(1,1); 
+}
+
+@keyframes lightup{
+    from{transform: scale(1.1,1.1); 
+        text-shadow: 1px 1px 2px black, 
+        0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+        };
+    to{transform: scale(1,1); 
+        text-shadow: none;
+        }
+}
+
+#github-icon{
+    font-size: 50px;
+    margin:20px;
+}
+
+#linkedin-icon{
+    font-size: 50px;
+    margin:20px;
+}
+ #facebook-icon{
+    font-size: 50px;
+    margin:20px;
+ }
+
+ #icon-link{
+     color: white;
+ }
+
+ 
+/* ----------SKILLS---------------- */
+/* #skills-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.247);
+    height: 85vh;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 2vh 1vh 1vh 1vh;
+} */

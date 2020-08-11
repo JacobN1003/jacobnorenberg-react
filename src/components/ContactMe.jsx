@@ -3,7 +3,6 @@ import {Label, Input, Button, Tooltip, Spinner} from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope, faPaperPlane} from "@fortawesome/free-solid-svg-icons"
-import axios from 'axios';
 import '../css/contactme.css'
 
 export default class ContactMe extends Component {

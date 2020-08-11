@@ -15,45 +15,48 @@ export default class NavigationBar extends Component {
     constructor(props){
         super(props)
         this.state = {
-            darkMode: false,
-            showHomePage: true,
-            showSkillsPage: false,
-            showWorkPage: false,
-            showContactPage: false
+           menuOpen: false
         }
-        this.toggleMode = this.toggleMode.bind(this)
-        this.toggleHome = this.toggleHome.bind(this)
-        this.togglePage = this.togglePage.bind(this)
+        this.toggleMenu = this.toggleMenu.bind(this)
     }
 
-    toggleMode(){
-        this.setState({darkMode: !this.state.darkMode})
-    }
-
-    toggleHome(){
-        this.setState({showHomePage: true, showSkillsPage: false, showWorkPage: false, showContactPage: false})
-    }
-
-    togglePage(page){
-        if(page === "skills") this.setState({showHomePage: false, showSkillsPage: true, showWorkPage: false, showContactPage: false}) 
-        if(page === "work") this.setState({showHomePage: false, showSkillsPage: false, showWorkPage: true, showContactPage: false})
-        if(page === "contact") this.setState({showHomePage: false, showSkillsPage: false, showWorkPage: false, showContactPage: true})
+    toggleMenu = () => {
+        this.setState({menuOpen: !this.state.menuOpen})
+        let topbar = document.getElementsByClassName("top")[0]
+        let midbar = document.getElementsByClassName("mid")[0]
+        let botbar = document.getElementsByClassName("bot")[0]
+        let menu = document.getElementsByClassName("menu")[0]
+        if(!this.state.menuOpen){
+            topbar.classList.add("open")
+            midbar.classList.add("open")
+            botbar.classList.add("open")
+            menu.classList.add("open")
+        }
+        else{
+            topbar.classList.remove("open")
+            midbar.classList.remove("open")
+            botbar.classList.remove("open")
+            menu.classList.remove("open")
+        }
     }
 
     
-    
+
     render() {
         return (
-            <div id="menu">
-               <Button id="btn-wrapper">
-                <div id="top"/>
-                <div id="mid"/>
-                <div id="bot"/>
-               </Button>
-                {/* {this.state.showHomePage && <HomePage/>}
-                {this.state.showSkillsPage && <Skills/>}
-                {this.state.showWorkPage && <WorkExperience/>}
-                {this.state.showContactPage && <ContactMe/>} */}
+            <div>
+                <Button onClick={this.toggleMenu} id="btn-wrapper">
+                    <div className="top"/>
+                    <div className="mid"/>
+                    <div className="bot"/>
+                </Button>
+                <div className="menu">
+                    <div id="menu-items">
+                        <h5 id="each-item">About Me</h5>
+                        <h5 id="each-item">My Skills</h5>
+                        <h5 id="each-item">My Projects</h5>
+                    </div>
+                </div>
             </div>
         )
     }
