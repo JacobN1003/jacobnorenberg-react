@@ -61,6 +61,7 @@ export default class HomePage extends Component {
                 <Sky how={100} time={60} size={'50px'} background={'rgb(37, 37, 37)'} 
                     images={{ 0: circle, 1: dotcircle, 2: circle1, 3: circle3 }} />
                 {showNav && <NavigationBar/>}
+                
                 {!showNav && 
                     <div> 
                         <div className="jacobs-portfolio" >
