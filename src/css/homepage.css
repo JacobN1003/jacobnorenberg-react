@@ -1,5 +1,5 @@
 #home-page{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     color:white;
     display:flex;
@@ -18,7 +18,7 @@
     position: relative;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.247);
-    height: 85vh;
+    height: 75vh;
     padding: 10px 10px 10px 10px;
     border-radius: 30px;
     margin: 1vh 1vh 1vh 1vh;
