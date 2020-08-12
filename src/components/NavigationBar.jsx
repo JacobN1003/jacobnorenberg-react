@@ -52,9 +52,9 @@ export default class NavigationBar extends Component {
                 </Button>
                 <div className="menu">
                     <div id="menu-items">
-                        <h5 id="each-item">About Me</h5>
-                        <h5 id="each-item">My Skills</h5>
-                        <h5 id="each-item">My Projects</h5>
+                        <label id="each-item">About Me</label>
+                        <label id="each-item">My Skills</label>
+                        <label id="each-item">My Projects</label>
                     </div>
                 </div>
             </div>

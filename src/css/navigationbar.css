@@ -19,8 +19,8 @@
 
 #btn-wrapper{
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 15px;
+    top: 15px;
     background-color: transparent;
     border: none;
     z-index: 2;
@@ -30,13 +30,14 @@
     box-shadow: none;
 }
 
+
 .top, .mid, .bot{
     position: relative;
     margin-top:6px;
     margin-bottom:6px;
     background-color: white;
-    width: 30px;
-    height: 3px;
+    width: 45px;
+    height: 5px;
     border-radius: 20px;
     transition-duration: 1s;
 }
@@ -52,7 +53,7 @@
 }
 .bot.open{
     transition-duration: 1s;
-    transform: rotate(-45deg) translate(2px,-13px)
+    transform: rotate(-45deg) translate(5px,-16px)
 }
 
 #menu-items{
@@ -60,10 +61,38 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin-top: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
 #each-item{
     padding: 10px;
-    
+    font-size: 23px;
+}
+
+#each-item:hover{
+    cursor: pointer;
+    color: rgb(194, 191, 47);
+}
+
+@media only screen and (min-width: 400px) {
+    .menu{
+        position: absolute;
+        left: -50%;
+        top: 0;
+        width: 40%;
+        background-color: rgba(0, 0, 0, 0.76);
+        border-radius: 30px;
+        border: black solid 2px;
+        padding:5px;
+        z-index: 1;
+        opacity: 0;
+        transition-duration: 1s;
+    }
+
+    #each-item{
+        margin-left: 7vw;
+        padding: 10px;
+        font-size: 30px;
+    }
 }

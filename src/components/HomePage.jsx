@@ -58,10 +58,10 @@ export default class HomePage extends Component {
         const {showNav, showButtonType} = this.state
         return (
             <div id="home-page">
-                <Sky how={100} time={60} size={'50px'} background={'rgb(37, 37, 37)'} 
-                    images={{ 0: circle, 1: dotcircle, 2: circle1, 3: circle3 }} />
+                {/* <Sky how={100} time={60} size={'50px'} background={'rgb(37, 37, 37)'} 
+                    images={{ 0: circle, 1: dotcircle, 2: circle1, 3: circle3 }} /> */}
                 {showNav && <NavigationBar/>}
-                
+
                 {!showNav && 
                     <div> 
                         <div className="jacobs-portfolio" >
@@ -84,12 +84,14 @@ export default class HomePage extends Component {
                             <div id="portrait-container">
                                 <div id="home-portrait"/>
                             </div>
-                            <br/><br/>
-                            <h2>Welcome, I'm Jacob</h2>
-                            <label id="current">Current Computer Science Undergraduate</label>
-                            <label id="future">Future Full-Stack Web Developer</label>
-                            <label id="marine">US Marine Corps Veteran</label>
-                            <br/><br/>
+                            <br/>
+                            <div> 
+                                <label id="welcome">Welcome, I'm Jacob</label>
+                                <label id="current">Current Computer Science Undergraduate</label>
+                                <label id="future">Future Full-Stack Web Developer</label>
+                                <label id="marine">US Marine Corps Veteran</label>
+                            </div>
+                            <br/>
                             <div id="social-container">
                                 <a id="icon-link" href="https://github.com/JacobN1003">
                                     <FontAwesomeIcon id="github-icon" icon={faGithubSquare}/>
